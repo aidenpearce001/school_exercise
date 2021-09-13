@@ -1,0 +1,72 @@
+/* Custom page CSS
+-------------------------------------------------- 
+*/
+
+.container {
+  width: auto;
+  padding: 0 15px;
+}
+
+.resize {
+  width: 50px;
+  height: 50px;
+}
+
+.img-deco {
+  border: 5px red solid; 
+}
+#first-p {
+  font-size: 1em;
+}
+
+.second-p {
+  color: red;
+}
+
+.hover figure img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+.hoverTable{
+  width:100%; 
+  border-collapse:collapse; 
+}
+.hoverTable td{ 
+  padding:7px; ;
+}
+
+.hoverTable tr:hover {
+  background: #b8d1f3;
+}
+
+
+
+
