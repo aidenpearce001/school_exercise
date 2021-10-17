@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h2,
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #444;
+        }
+        h3 {
+            font-style: italic;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: right;
+        }
+        
+        .highlight {
+            color: blue;
+            font-style: italic;
+            font-stretch: expanded;
+        }
+        .default {
+            color: darkgrey;
+            font-weight: bold;
+            font-stretch: condensed;
+        }
+        #myID {
+            color: green;
+            font-size: 12pt;
+        }
+
+        img.a{
+            vertical-align: baseline;
+        }
+        img.b{
+            vertical-align: text-top;
+        }
+        img.c{
+            vertical-align: text-bottom;
+        }
+
+        h4 {
+            text-decoration: overline;
+        }
+        h5 {
+            text-decoration: underline;
+        }
+        h6 {
+            text-decoration: line-through;
+        }
+
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: hotpink;
+        }
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue; margin-left: 30px;"> This is a heading we are playing with.</h1>
+    <h2> This is a heading 2 we are playing with.</h2>
+    <h3> This is a heading 3 we are playing with.</h3>
+
+    <p class="highlight" id="myID">This paragraph has blue text.</p>
+    <p class="default" id="myID">This paragraph has dark gray text.</p>
+    <p class="default" id="myID">This paragraph also has dark gray text like other paragraphs.</p>
+
+    <p>An image <img class="a" src="./images/usth.png" alt="usth" width="100" height="100"> with a default alignment.</p>
+    <p>An image <img class="b" src="./images/usth.png" alt="usth" width="100" height="100"> with a text-top alignment.</p>
+    <p>An image <img class="c" src="./images/usth.png" alt="usth" width="100" height="100"> with a text-bottom alignment.</p>
+
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5> 
+    <h6>This is heading 6</h6>
+
+    <a href="https://www.usth.edu.vn">This is a link</a>
+</body>
+</html>
