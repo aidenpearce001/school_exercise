@@ -1,6 +1,8 @@
 package vn.edu.usth.booksearch;
 
 import androidx.appcompat.app.AppCompatActivity;
+import vn.edu.usth.booksearch.net.BookClient;
+import vn.edu.usth.booksearch.models.Book;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -8,15 +10,23 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 import java.util.ArrayList;
+import java.util.Arrays;
 import android.util.Log;
+import android.nfc.Tag;
+import android.widget.ProgressBar;
+
 
 import java.io.IOException;
-import okhttp3.OkHttpClient;
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Request;
-import okhttp3.Response;
-import okhttp3.logging.HttpLoggingInterceptor;
+import org.apache.http.Header;
+import com.loopj.android.http.*;
+
+import org.apache.http.Header;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+//import okhttp3.OkHttpClient;
+//import okhttp3.Request;
+//import okhttp3.logging.HttpLoggingInterceptor;
 //import retrofit2.Call;
 //import retrofit2.Callback;
 //import retrofit2.Response;
@@ -30,86 +40,61 @@ public class MainActivity extends AppCompatActivity {
     ListView myList;
     private TextView mTextViewResult;
 
-    private String _search;
+    private String query;
     private Integer _limit;
 
-    ArrayList<String> list;
-    ArrayAdapter<String> adapter;
+    private BookClient client;
+    private ProgressBar progress;
+    private ArrayList<Book> aBooks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ArrayList<Book> aBooks = new ArrayList<Book>();
         mTextViewResult = findViewById(R.id.text_view_result);
 
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
+//        this.search = search;
+        // Show progress bar before making network request
+//        if(search)
+//            progress.setVisibility(ProgressBar.VISIBLE);
+        client = new BookClient();
+        /*if (query == null) {
+        } else {
+            query = "oscar Wilde";
+        }*/
 
-//        Retrofit retrofit = new Retrofit.Builder()
-//                .baseUrl("https://reqres.in/api/users/")
-//                .client(client)
-//                .addConverterFactory(GsonConverterFactory.create())
-//                .build();
+        query = "oscar Wilde";
 
-
-        _search = "Harry Potter";
-        _limit = 10;
-//        String url = "http://openlibrary.org/search/lists.json?q="+_search+"&limit="+_limit+"&offset=0";
-        String url = "http://openlibrary.org/search/lists.json?q=harry potter&limit=10&offset=0";
-//        Request request = new Request.Builder()
-//                .url("http://openlibrary.org/search/lists.json?q=harry potter&limit=10&offset=0")
-//                .method("GET", null)
-//                .build();
-        Request request = new Request.Builder()
-                .method("GET", null)
-                .url(url)
-                .build();
-
-        Response response = client.newCall(request).execute();
-
-        client.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                if (response.isSuccessful()) {
-                    final String myResponse = response.body().string();
-
-                    MainActivity.this.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Log.i(myResponse);
-                            mTextViewResult.setText(myResponse);
+        client.getBooks(query, new JsonHttpResponseHandler() {
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                try {
+                    // hide progress bar
+                    progress.setVisibility(ProgressBar.GONE);
+                    JSONArray docs = null;
+                    if(response != null) {
+                        // Get the docs json array
+                        docs = response.getJSONArray("docs");
+                        // Parse json array into array of model objects
+                        final ArrayList<Book> books = Book.fromJson(docs);
+                        Log.v("Testing", "Hello");
+                        for (Book book : books) {
+                            Log.i("Data",book.toString());
+                            mTextViewResult.setText(book.toString());
                         }
-                    });
+//
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
             }
+
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                progress.setVisibility(ProgressBar.GONE);
+            }
         });
-
-
-//        mySearchView=(SearchView)findViewById(R.id.searchView);
-//        myList=(ListView)findViewById(R.id.mylist);
 //
-//        list.add("Monday");
-//
-//        adapter = new ArrayAdapter<>( context: this, android.R.layout.simple_list_item_1, list);
-//        myList.setAdapter(adapter);
-//
-//        mySearchView.setOnQueryListener (new SearchView.OnQueryTextListener() {
-//            public boolean onQueryTextSubmit(String s) {
-//                return false;
-//            }
-//
-//            publuc boolean OnQueryTextChange(String s) {
-//                return false
-//            }
-//
-//        });
     }
 
 }
