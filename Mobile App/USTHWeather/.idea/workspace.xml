@@ -9,13 +9,59 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59d24f15-77ca-4704-82f1-9da4c56a2d1e" name="Default Changelist" comment="" />
+    <list default="true" id="59d24f15-77ca-4704-82f1-9da4c56a2d1e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/androidTest/java/vn/edu/usth/booksearch/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/java/vn/edu/usth/booksearch/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/java/vn/edu/usth/booksearch/models/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/java/vn/edu/usth/booksearch/net/BookClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/drawable/shapebgsearch.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/app/src/test/java/vn/edu/usth/booksearch/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../booksearch/settings.gradle" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Watch Dogs\.android\avd\Pixel_2_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Watch Dogs\.android\avd\Pixel_XL_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -95,9 +141,7 @@
       <option name="ACTIVITY_CLASS" value="vn.edu.usth.weather.WeatherActivity" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="USTH_Weather.app" />
@@ -153,9 +197,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
